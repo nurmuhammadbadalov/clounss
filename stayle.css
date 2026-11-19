@@ -1,0 +1,120 @@
+
+/* XARID TIZIMI */
+
+.price {
+    color: #ff0000;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-shadow: 0 0 12px red;
+}
+
+.buy-button {
+    width: 100%;
+    padding: 17px;
+    background: linear-gradient(90deg,#650000,#ff0000);
+    border: 2px solid red;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Orbitron';
+    cursor: pointer;
+    transition: .4s;
+}
+
+.buy-button:hover {
+    background: red;
+    box-shadow: 0 0 25px red;
+    transform: scale(1.04);
+}
+
+.bought-button {
+    width: 100%;
+    padding: 17px;
+    background: #075000;
+    color: white;
+    border: 2px solid #00ff00;
+    font-family: 'Orbitron';
+    font-size: 13px;
+    cursor: default;
+}
+
+.purchase-info {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background: #160000;
+    border: 2px solid red;
+    box-shadow: 0 0 20px red;
+    text-align: center;
+}
+
+.purchase-info h2 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.purchase-info p {
+    color: #ff3333;
+    line-height: 2;
+}
+
+.confirm-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #000e;
+    z-index: 200;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.confirm-box {
+    width: 100%;
+    max-width: 450px;
+    background: #160000;
+    border: 2px solid red;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 35px red;
+}
+
+.confirm-box h2 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.confirm-box p {
+    color: #ff4444;
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+.confirm-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.confirm-actions button {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Orbitron';
+}
+
+.confirm-yes {
+    background: #900000;
+}
+
+.confirm-no {
+    background: #333;
+}
+
+@media(max-width:600px) {
+    .confirm-actions {
+        flex-direction: column;
+    }
+}

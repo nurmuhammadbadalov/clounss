@@ -1,0 +1,1088 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>QORONG'U ARXIV | CLOWN HORROR</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #050000;
+    color: red;
+    font-family: 'Orbitron', sans-serif;
+}
+
+:root {
+    --red: #ff0000;
+    --dark: #080000;
+    --light-red: #ff3333;
+}
+
+header {
+    text-align: center;
+    padding: 45px 15px;
+    background: linear-gradient(90deg,#050000,#350000,#050000);
+    border-bottom: 2px solid red;
+    box-shadow: 0 0 30px red;
+}
+
+.logo {
+    font-family: 'Creepster', cursive;
+    color: red;
+    font-size: 65px;
+    text-shadow: 0 0 15px red, 0 0 35px red;
+    letter-spacing: 5px;
+}
+
+header p {
+    color: red;
+    margin-top: 15px;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 20px;
+    background: #100000;
+    border-bottom: 1px solid red;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: red;
+    text-decoration: none;
+    font-size: 11px;
+    padding: 13px 18px;
+    border: 1px solid red;
+    transition: .3s;
+}
+
+nav a:hover {
+    background: red;
+    color: black;
+    box-shadow: 0 0 20px red;
+}
+
+section {
+    padding: 50px 20px;
+    scroll-margin-top: 80px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Creepster', cursive;
+    color: red;
+    font-size: 45px;
+    text-shadow: 0 0 20px red;
+    margin-bottom: 18px;
+}
+
+.description {
+    text-align: center;
+    color: #ff3333;
+    font-size: 12px;
+    line-height: 2;
+    margin-bottom: 35px;
+}
+
+.warning {
+    text-align: center;
+    padding: 20px;
+    color: red;
+    font-size: 12px;
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: .3;
+    }
+}
+
+.info-box {
+    max-width: 1000px;
+    margin: 25px auto;
+    padding: 30px;
+    background: linear-gradient(145deg,#200000,#080000);
+    border: 1px solid red;
+    border-radius: 10px;
+    box-shadow: 0 0 18px #700000;
+}
+
+.info-box h2 {
+    color: red;
+    font-family: 'Creepster', cursive;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.info-box p {
+    color: #ff3333;
+    font-size: 13px;
+    line-height: 2.2;
+}
+
+/* QIDIRUV */
+
+.search {
+    display: block;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto 40px;
+    padding: 17px;
+    background: #100000;
+    border: 1px solid red;
+    border-radius: 5px;
+    color: red;
+    outline: none;
+    font-family: 'Orbitron';
+}
+
+.search::placeholder {
+    color: #ff4444;
+}
+
+/* CLOWNLAR */
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    max-width: 1050px;
+    margin: auto;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(100deg,#1b0000,#080000);
+    border: 2px solid red;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #700000;
+    transition: .4s;
+}
+
+.card:hover {
+    transform: scale(1.015);
+    box-shadow: 0 0 35px red;
+}
+
+.card img {
+    width: 280px;
+    min-width: 280px;
+    height: 300px;
+    object-fit: cover;
+    border: 2px solid red;
+    border-radius: 8px;
+    filter: brightness(.8);
+}
+
+.card-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.card h3 {
+    color: red;
+    font-size: 22px;
+    margin-bottom: 18px;
+    text-shadow: 0 0 12px red;
+}
+
+.card p {
+    color: #ff3333;
+    font-size: 13px;
+    line-height: 2;
+    margin-bottom: 18px;
+}
+
+.price {
+    color: red;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-shadow: 0 0 12px red;
+}
+
+.card button {
+    width: 100%;
+    padding: 16px;
+    color: white;
+    background: linear-gradient(90deg,#700000,#ff0000);
+    border: 1px solid red;
+    cursor: pointer;
+    font-family: 'Orbitron';
+    transition: .3s;
+}
+
+.card button:hover {
+    box-shadow: 0 0 20px red;
+}
+
+.card .bought {
+    background: #075000;
+    border: 2px solid #00ff00;
+    color: white;
+    cursor: default;
+}
+
+.card .story-button {
+    margin-top: 12px;
+    background: #300000;
+}
+
+/* XARID MA'LUMOTLARI */
+
+.purchase-info {
+    max-width: 800px;
+    margin: 35px auto;
+    padding: 30px;
+    background: #160000;
+    border: 2px solid red;
+    box-shadow: 0 0 20px red;
+    text-align: center;
+}
+
+.purchase-info h2 {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.purchase-info p {
+    color: #ff3333;
+    line-height: 2.5;
+    font-size: 13px;
+}
+
+/* RAQAMLAR */
+
+.database {
+    max-width: 650px;
+    margin: auto;
+    text-align: center;
+    background: #150000;
+    border: 1px solid red;
+    border-radius: 12px;
+    padding: 35px;
+    box-shadow: 0 0 25px #800000;
+}
+
+.database h2 {
+    color: red;
+    font-family: 'Creepster';
+    font-size: 32px;
+}
+
+.database p {
+    color: #ff3333;
+    font-size: 12px;
+    line-height: 2;
+    margin-top: 15px;
+}
+
+.database input {
+    width: 100%;
+    padding: 16px;
+    background: #080000;
+    color: red;
+    border: 1px solid red;
+    margin: 20px 0;
+    font-family: 'Orbitron';
+    outline: none;
+}
+
+.database input::placeholder {
+    color: #ff4444;
+}
+
+.database button {
+    width: 100%;
+    padding: 15px;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Orbitron';
+}
+
+.number-list {
+    max-width: 650px;
+    margin: 25px auto;
+}
+
+.number-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 18px;
+    margin-bottom: 12px;
+    background: #180000;
+    border: 1px solid red;
+    border-left: 5px solid red;
+    color: red;
+    font-size: 12px;
+}
+
+.number-item button {
+    padding: 10px;
+    background: #900000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* MODAL OYNALARI */
+
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #000e;
+    z-index: 100;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal-content {
+    width: 100%;
+    max-width: 500px;
+    background: #170000;
+    border: 2px solid red;
+    box-shadow: 0 0 35px red;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+}
+
+.modal-content h2 {
+    color: red;
+    font-family: 'Creepster';
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.modal-content p {
+    color: #ff3333;
+    font-size: 13px;
+    line-height: 2.2;
+    margin-bottom: 20px;
+}
+
+.modal-content button {
+    padding: 13px 20px;
+    margin: 5px;
+    color: white;
+    background: red;
+    border: none;
+    cursor: pointer;
+    font-family: 'Orbitron';
+}
+
+.confirm-yes {
+    background: #900000 !important;
+}
+
+.confirm-no {
+    background: #333 !important;
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 35px;
+    background: #100000;
+    border-top: 1px solid red;
+    color: red;
+    font-size: 11px;
+    line-height: 2.5;
+}
+
+/* TELEFON */
+
+@media(max-width:700px) {
+    .logo {
+        font-size: 42px;
+    }
+
+    .title {
+        font-size: 34px;
+    }
+
+    nav a {
+        font-size: 9px;
+        padding: 10px;
+    }
+
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card img {
+        width: 100%;
+        min-width: 0;
+        height: 300px;
+    }
+
+    .card-content {
+        width: 100%;
+    }
+
+    .database {
+        padding: 20px;
+    }
+
+    .number-item {
+        flex-wrap: wrap;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1 class="logo">QORONG'U ARXIV</h1>
+    <p>🤡 CLOWN HORROR MUZEYI 🤡</p>
+    <p>QO'RQINCHLI OBRAZLAR VA SIRLI HIKOYALAR</p>
+</header>
+
+<nav>
+    <a href="#bosh">BOSH SAHIFA</a>
+    <a href="#clowns">CLOWNLAR</a>
+    <a href="#tarix">TARIX</a>
+    <a href="#arxiv">RAQAMLAR ARXIVI</a>
+    <a href="#xaridlar">XARIDLAR</a>
+</nav>
+
+<!-- BOSH SAHIFA -->
+
+<section id="bosh">
+
+    <div class="warning">
+        ⚠ DIQQAT! BADIIY QO'RQINCHLI ARXIV ⚠
+    </div>
+
+    <h2 class="title">QORONG'U OLAMGA XUSH KELIBSIZ</h2>
+
+    <p class="description">
+        Kulgi ortidagi sirli dunyoga xush kelibsiz.
+        Bu yerda 10 ta qo'rqinchli clown haqida hikoyalar bor.
+    </p>
+
+    <div class="info-box">
+        <h2>🤡 Clownlar kimlar?</h2>
+        <p>
+            Clownlar — odamlarni kuldirish uchun yaratilgan
+            sahna va sirk obrazlari. Ammo horror filmlarda
+            ular butunlay boshqacha ko'rinishda tasvirlanadi.
+            Oq yuz, qizil tabassum, g'alati ko'zlar va qorong'i
+            kiyimlar ularni sirli qahramonlarga aylantiradi.
+            Ba'zi hikoyalarda ular eski sirklarning unutilgan
+            aktyorlari sifatida tasvirlanadi.
+        </p>
+    </div>
+
+</section>
+
+<!-- CLOWNLAR -->
+
+<section id="clowns">
+
+    <h2 class="title">10 TA QO'RQINCHLI CLOWN</h2>
+
+    <p class="description">
+        Har bir clownning o'z hikoyasi va narxi bor.
+    </p>
+
+    <input
+        class="search"
+        id="search"
+        placeholder="Clown nomini qidiring..."
+        oninput="searchClowns()"
+    >
+
+    <div class="gallery" id="gallery"></div>
+
+</section>
+
+<!-- TARIX -->
+
+<section id="tarix">
+
+    <h2 class="title">CLOWNLAR TARIXI</h2>
+
+    <div class="info-box">
+        <h2>1. Clownlarning tarixi</h2>
+        <p>
+            Clown obrazi ko'p asrlik sahna an'analariga ega.
+            Ular teatr va sirk tomoshalarida kulgi va
+            ko'ngilochar chiqishlari bilan mashhur bo'lgan.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h2>2. Nega ular qo'rqinchli ko'rinadi?</h2>
+        <p>
+            Oq makiyaj, sun'iy tabassum, noodatiy kiyimlar
+            va g'alati yuz ifodalari ba'zi odamlarda
+            qo'rquv hissini uyg'otishi mumkin.
+        </p>
+    </div>
+
+    <div class="info-box">
+        <h2>3. Eski sirk afsonasi</h2>
+        <p>
+            Tasavvur qiling: yarim tunda eski sirk chodiri
+            ko'rinadi. Chiroqlar o'chgan, sahna bo'sh.
+            O'rtada esa bitta qizil shar turibdi.
+            Bu faqat badiiy horror hikoyasidir.
+        </p>
+    </div>
+
+</section>
+
+<!-- RAQAMLAR -->
+
+<section id="arxiv">
+
+    <h2 class="title">SIRLI RAQAMLAR ARXIVI</h2>
+
+    <p class="description">
+        Bu yerga faqat o'zingizning test raqamlaringizni kiriting.
+    </p>
+
+    <div class="database">
+
+        <h2>☠ RAQAM QO'SHISH ☠</h2>
+
+        <p>MAHALLIY DEMO ARXIV</p>
+
+        <input
+            type="tel"
+            id="phone"
+            placeholder="+998 XX XXX XX XX"
+            maxlength="20"
+        >
+
+        <button onclick="addNumber()">
+            RAQAMNI SAQLASH
+        </button>
+
+        <p id="message">ARXIV TAYYOR...</p>
+
+    </div>
+
+    <div class="number-list" id="numberList"></div>
+
+</section>
+
+<!-- XARIDLAR -->
+
+<section id="xaridlar">
+
+    <h2 class="title">XARIDLAR ARXIVI</h2>
+
+    <div class="purchase-info">
+
+        <h2>QIZIL ARXIV</h2>
+
+        <p>
+            Sotib olingan clownlar:
+            <span id="boughtCount">0</span>
+        </p>
+
+        <p>
+            Umumiy summa:
+            <span id="totalPrice">0</span> so'm
+        </p>
+
+        <p>
+            Xaridlar faqat demo rejimida ishlaydi.
+        </p>
+
+        <p id="purchaseMessage">
+            HOZIRCHA XARID YO'Q
+        </p>
+
+    </div>
+
+</section>
+
+<footer>
+    <h2>QORONG'U ARXIV</h2>
+    <p>🤡 KULGI ORTIDAGI SIRLI DUNYO 🤡</p>
+    <p>© 2026 BARCHA HUQUQLAR HIMOYALANGAN</p>
+    <p>BU BADIIY HORROR LOYIHASIDIR</p>
+</footer>
+
+<!-- HIKOYA MODALI -->
+
+<div class="modal" id="storyModal">
+
+    <div class="modal-content">
+
+        <h2 id="storyTitle"></h2>
+
+        <p id="storyText"></p>
+
+        <button onclick="closeStory()">
+            YOPISH
+        </button>
+
+    </div>
+
+</div>
+
+<!-- XARIDNI TASDIQLASH MODALI -->
+
+<div class="modal" id="confirmModal">
+
+    <div class="modal-content">
+
+        <h2>XARIDNI TASDIQLASH</h2>
+
+        <p id="confirmText">
+            Ushbu clownni sotib olmoqchimisiz?
+        </p>
+
+        <button class="confirm-yes" onclick="confirmPurchase()">
+            HA, SOTIB OLISH
+        </button>
+
+        <button class="confirm-no" onclick="cancelPurchase()">
+            BEKOR QILISH
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+
+// CLOWN RASMLARI
+
+const images = [
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQInkfKWNRwUw7b8kH4GulfrSYNzesc9GxQ7j2lJAWGGw&s=10",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjsTqawAGWQthFspbk5cg0edjEMn0hMWPCRkPSkm4Aqw&s=10",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF4Hb5RvlsR-iYSMyg8RaoHPzH-bZ3F52z9lGfjGlANw&s=10",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU0aTkHhG9Ya2jxQGV3tV2TWVHe5NMTr9AzF3JH5uo7w&s=10",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2vfBc2CMV68kEomJijfsw-52__JPUEM1mMTUz7MEkgw&s",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTe8o48RXJ8yjwbuA84nHEKwadT3PiSbv5C63E6DWFSUw&s=10",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRy5tqMfOX4wNm0BFQ5k0Rubp9qSOfxgIJnCL9THKePdg&s=10",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRJKuv0LXYZYfhQ34px7YH_tSpOzfQrREPFZwU__MAPQ&s=10",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjsTqawAGWQthFspbk5cg0edjEMn0hMWPCRkPSkm4Aqw&s=10",
+"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQInkfKWNRwUw7b8kH4GulfrSYNzesc9GxQ7j2lJAWGGw&s=10"
+];
+
+// CLOWN NOMLARI
+
+const names = [
+"QIZIL TABASSUM",
+"QORA SOYA",
+"PUSHTI KABUS",
+"SUKUTDAGI CLOWN",
+"YUZSIZ",
+"QORONG'U MASXARABOZ",
+"G'ALATI KO'ZLAR",
+"SOYA CLOWN",
+"OXIRGI TOMOSHA",
+"SO'NGGI KULGI"
+];
+
+// CLOWN HIKOYALARI
+
+const stories = [
+"Qizil tabassum eski sirk afsonasidagi sirli qahramon. Uning qizil tabassumi qorong'i sahnada uzoqdan ko'rinadi. Aytishlaricha, uning tomoshasi hech qachon tugamaydi. Bu badiiy horror hikoyasidir.",
+
+"Qora soya hech qachon gapirmaydigan sirli clown sifatida tasvirlanadi. Uning qora kiyimi va jimligi eski sirk haqidagi afsonalarga o'zgacha kayfiyat beradi.",
+
+"Pushti kabus pushti sharlar bilan bog'liq sirli obraz. Uning hikoyasi tashlandiq sirkdagi eski tomosha bilan boshlanadi.",
+
+"Sukutdagi clown hech qachon kulmaydi va gapirmaydi. U faqat eski sahna o'rtasida turgan sirli qahramon sifatida tasvirlanadi.",
+
+"Yuzsiz — yuzida hech qanday ifoda bo'lmagan badiiy obraz. Uning hikoyasida eng sirli narsa noma'lumlikdir.",
+
+"Qorong'u masxaraboz qora va qizil kiyimda tasvirlanadi. Uning eski sirkdagi chiqishlari haqida dahshatli afsonalar yaratilgan.",
+
+"G'alati ko'zlar har doim tomoshabinga qarab turgandek ko'rinadigan horror qahramoni. Uning ko'zlari qizil chiroqda yanada sirli ko'rinadi.",
+
+"Soya clown haqidagi afsonada u qorong'i sahna bilan bog'lanadi. Uning hikoyasi sirli va tushunarsiz hodisalarga boy.",
+
+"Oxirgi tomosha eski sirkning so'nggi kechasi haqida. Sahna bo'sh, chiroqlar o'chgan va o'rtada bitta clown shlyapasi qolgan.",
+
+"So'nggi kulgi qorong'i sirkning eng sirli qahramoni. Uning hikoyasi uzoqdan eshitilgan g'alati kulgi bilan yakunlanadi."
+];
+
+// NARXLAR
+
+const prices = [
+50000,
+65000,
+70000,
+80000,
+90000,
+100000,
+110000,
+120000,
+135000,
+150000
+];
+
+// XARID QILINGAN CLOWNLAR
+
+let boughtClowns = [];
+
+// TANLANGAN CLOWN
+
+let selectedClown = null;
+
+// GALEREYANI CHIQARISH
+
+function showClowns(list = names) {
+
+    const gallery = document.getElementById("gallery");
+
+    gallery.innerHTML = "";
+
+    list.forEach(name => {
+
+        const i = names.indexOf(name);
+
+        const card = document.createElement("div");
+
+        card.className = "card";
+
+        const img = document.createElement("img");
+
+        img.src = images[i];
+
+        img.alt = name;
+
+        img.onerror = function() {
+            this.alt = "Rasm yuklanmadi";
+        };
+
+        const content = document.createElement("div");
+
+        content.className = "card-content";
+
+        const title = document.createElement("h3");
+
+        title.textContent = name;
+
+        const story = document.createElement("p");
+
+        story.textContent = stories[i];
+
+        const price = document.createElement("div");
+
+        price.className = "price";
+
+        price.textContent =
+            prices[i].toLocaleString("uz-UZ") + " so'm";
+
+        const buy = document.createElement("button");
+
+        if (boughtClowns.includes(i)) {
+
+            buy.textContent = "SOTIB OLINDI ✓";
+
+            buy.className = "bought";
+
+            buy.disabled = true;
+
+        } else {
+
+            buy.textContent = "SOTIB OLISH";
+
+            buy.onclick = function() {
+                openPurchase(i);
+            };
+
+        }
+
+        const detail = document.createElement("button");
+
+        detail.textContent = "TO'LIQ HIKOYA";
+
+        detail.className = "story-button";
+
+        detail.onclick = function() {
+            openStory(i);
+        };
+
+        content.append(
+            title,
+            story,
+            price,
+            buy,
+            detail
+        );
+
+        card.append(img, content);
+
+        gallery.appendChild(card);
+
+    });
+
+    updatePurchaseInfo();
+
+}
+
+// QIDIRUV
+
+function searchClowns() {
+
+    const value = document
+        .getElementById("search")
+        .value
+        .toLowerCase();
+
+    const result = names.filter(name =>
+        name.toLowerCase().includes(value)
+    );
+
+    showClowns(result);
+
+}
+
+// HIKOYA OYNASI
+
+function openStory(index) {
+
+    document.getElementById("storyModal").style.display = "flex";
+
+    document.getElementById("storyTitle").textContent =
+        names[index];
+
+    document.getElementById("storyText").textContent =
+        stories[index];
+
+}
+
+function closeStory() {
+
+    document.getElementById("storyModal").style.display = "none";
+
+}
+
+// XARID OYNASINI OCHISH
+
+function openPurchase(index) {
+
+    if (boughtClowns.includes(index)) return;
+
+    selectedClown = index;
+
+    document.getElementById("confirmText").textContent =
+        names[index] + " clownini " +
+        prices[index].toLocaleString("uz-UZ") +
+        " so'mga sotib olishni tasdiqlaysizmi?";
+
+    document.getElementById("confirmModal").style.display = "flex";
+
+}
+
+// XARIDNI TASDIQLASH
+
+function confirmPurchase() {
+
+    if (selectedClown === null) return;
+
+    if (!boughtClowns.includes(selectedClown)) {
+
+        boughtClowns.push(selectedClown);
+
+    }
+
+    document.getElementById("confirmModal").style.display = "none";
+
+    selectedClown = null;
+
+    showClowns();
+
+    document.getElementById("purchaseMessage").textContent =
+        "XARID MUVAFFAQIYATLI YAKUNLANDI!";
+
+}
+
+// XARIDNI BEKOR QILISH
+
+function cancelPurchase() {
+
+    selectedClown = null;
+
+    document.getElementById("confirmModal").style.display = "none";
+
+}
+
+// XARID HISOBLASH
+
+function updatePurchaseInfo() {
+
+    let total = 0;
+
+    boughtClowns.forEach(index => {
+
+        total += prices[index];
+
+    });
+
+    document.getElementById("boughtCount").textContent =
+        boughtClowns.length;
+
+    document.getElementById("totalPrice").textContent =
+        total.toLocaleString("uz-UZ");
+
+    if (boughtClowns.length === 0) {
+
+        document.getElementById("purchaseMessage").textContent =
+            "HOZIRCHA XARID YO'Q";
+
+    }
+
+}
+
+// RAQAMLAR ARXIVI
+
+let numbers = [];
+
+function addNumber() {
+
+    const input = document.getElementById("phone");
+
+    const number = input.value.trim();
+
+    const message = document.getElementById("message");
+
+    if (!/^\+?[0-9\s()-]{7,20}$/.test(number)) {
+
+        message.textContent = "RAQAMNI TO'G'RI KIRITING!";
+
+        return;
+
+    }
+
+    if (numbers.includes(number)) {
+
+        message.textContent = "BU RAQAM ARXIVDA BOR!";
+
+        return;
+
+    }
+
+    numbers.push(number);
+
+    input.value = "";
+
+    message.textContent = "RAQAM DEMO ARXIVGA QO'SHILDI!";
+
+    renderNumbers();
+
+}
+
+// RAQAMLARNI KO'RSATISH
+
+function renderNumbers() {
+
+    const list = document.getElementById("numberList");
+
+    list.innerHTML = "";
+
+    if (numbers.length === 0) {
+
+        list.textContent = "ARXIV HOZIRCHA BO'SH.";
+
+        return;
+
+    }
+
+    numbers.forEach((number, index) => {
+
+        const item = document.createElement("div");
+
+        item.className = "number-item";
+
+        const text = document.createElement("span");
+
+        text.textContent =
+            "ARXIV #" + (index + 1) + " — " + number;
+
+        const button = document.createElement("button");
+
+        button.textContent = "O'CHIRISH";
+
+        button.onclick = function() {
+
+            numbers.splice(index, 1);
+
+            renderNumbers();
+
+        };
+
+        item.append(text, button);
+
+        list.appendChild(item);
+
+    });
+
+}
+
+// MODALLARNI TASHQARISIGA BOSISH
+
+document.querySelectorAll(".modal").forEach(modal => {
+
+    modal.addEventListener("click", function(event) {
+
+        if (event.target === this) {
+
+            this.style.display = "none";
+
+            selectedClown = null;
+
+        }
+
+    });
+
+});
+
+// SAYTNI ISHGA TUSHIRISH
+
+showClowns();
+
+renderNumbers();
+
+updatePurchaseInfo();
+
+</script>
+
+</body>
+</html>
